@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="csrf-token" content="VoliQ8HAPmcMEpaUWEmqIw4a8JaQZdXsfHLXxflJ">
+    <title>Test Autofill</title>
+    <script src="https://fill.dev/js/app.js" defer></script>
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <link href="https://fill.dev/css/app.css" rel="stylesheet">
+    <style>
+        #password-div {
+            color: blue;
+            font-size: 0;
+            width: 1px;
+            height: 1px;
+            border: none!important;
+            padding: 0;
+            margin: -10px;
+            position: absolute;
+        }
+
+        #password-div::after {
+            content: '';
+            position: absolute;
+            top: 10px; left: 0;
+            margin: 0;
+            padding: 0;
+            width: 25px;
+            height: 25px;
+            background: #fff;
+            z-index: 999;
+        }
+
+        .form-control:focus {
+            box-shadow: 0 0 0 0 rgba(255,255,255,0)!important;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <main class="py-4">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-8">
+                        <div class="card">
+                            <div class="card-header"><a href="./list.html">Password Manager Test - Login Form - Hidden using tiny size</a></div>
+                            <div class="card-body">
+                                <form action="javascript:(0)">
+                                    <input type="hidden" name="_token" value="VoliQ8HAPmcMEpaUWEmqIw4a8JaQZdXsfHLXxflJ">
+                                    <div class="form-group row">
+                                        <label for="username"
+                                            class="col-md-4 col-form-label text-md-right">Username</label>
+                                        <div class="col-md-6">
+                                            <input id="username" type="text" class="form-control" name="username" value
+                                                required autocomplete="username" autofocus>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row" id="password-div">
+                                        <label for="password"
+                                            class="col-md-4 col-form-label text-md-right">Password</label>
+                                        <div class="col-md-6">
+                                            <input style="border: transparent;" id="password" type="password" name="password"
+                                                required autocomplete="current-password">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row mb-0">
+                                        <div class="col-md-8 offset-md-4">
+                                            <button type="submit" class="btn btn-primary">
+                                                Login
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>

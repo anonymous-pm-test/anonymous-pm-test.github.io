@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="csrf-token" content="VoliQ8HAPmcMEpaUWEmqIw4a8JaQZdXsfHLXxflJ">
+    <title>Test Autofill</title>
+
+    <script src="https://fill.dev/js/app.js" defer></script>
+
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+
+    <link href="https://fill.dev/css/app.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="app">
+        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+            <div class="container">
+                <a class="navbar-brand" href="https://fill.dev">
+                    Test Autofill
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                    <ul class="navbar-nav mr-auto">
+                        <li class="active nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" role="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false" href="https://fill.dev">
+                                Login
+                                <b class="caret"></b> </a>
+                            <ul class="dropdown-menu">
+                                <li class="active">
+                                    <a class="nav-link" href="https://fill.dev/form/login-simple">
+                                        Simple
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="nav-link" href="https://fill.dev/basic">
+                                        HTTP Basic Auth
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" role="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false" href="https://fill.dev">
+                                Registration
+                                <b class="caret"></b> </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="nav-link" href="https://fill.dev/form/registration-email">
+                                        Email
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="nav-link" href="https://fill.dev/form/registration-username">
+                                        Username
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="nav-link" href="https://fill.dev/form/registration-simple">
+                                        Email and Username
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="nav-link" href="https://fill.dev/form/registration-2fa">
+                                        TOTP QR
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" role="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false" href="https://fill.dev">
+                                Credit Card
+                                <b class="caret"></b> </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="nav-link" href="https://fill.dev/form/credit-card-simple">
+                                        Simple
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" role="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false" href="https://fill.dev">
+                                Identity
+                                <b class="caret"></b> </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="nav-link" href="https://fill.dev/form/identity-simple">
+                                        Simple
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" role="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false" href="https://fill.dev">
+                                Avoid
+                                <b class="caret"></b> </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="nav-link" href="https://fill.dev/form/search">
+                                        Search
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" role="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false" href="https://fill.dev">
+                                Save in 1Password
+                                <b class="caret"></b> </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="nav-link" href="https://fill.dev/save/login">
+                                        Login
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="nav-link" href="https://fill.dev/save/credit-card">
+                                        Credit Card
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="nav-link" href="https://fill.dev/save/identity">
+                                        Identity
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" role="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false" href="https://fill.dev">
+                                References
+                                <b class="caret"></b> </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="nav-link" href="https://fill.dev/reference/whatwg">
+                                        HTML Autofill Spec
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="nav-link" href="https://fill.dev/reference/1password">
+                                        1Password Developer Guide
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <main class="py-4">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-8">
+                        <div class="card">
+                            <div class="card-header">Login</div>
+                            <div class="card-body">
+                                <form method="POST" action="https://fill.dev/submit">
+                                    <input type="hidden" name="_token" value="VoliQ8HAPmcMEpaUWEmqIw4a8JaQZdXsfHLXxflJ">
+                                    <div class="form-group row">
+                                        <label for="username"
+                                            class="col-md-4 col-form-label text-md-right">Username</label>
+                                        <div class="col-md-6">
+                                            <input id="username" type="text" class="form-control" name="username" value
+                                                required autocomplete="username" autofocus>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="password"
+                                            class="col-md-4 col-form-label text-md-right">Password</label>
+                                        <div class="col-md-6">
+                                            <input id="password" type="password" class="form-control" name="password"
+                                                required autocomplete="current-password" disabled>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row mb-0">
+                                        <div class="col-md-8 offset-md-4">
+                                            <button type="submit" class="btn btn-primary">
+                                                Login
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>
