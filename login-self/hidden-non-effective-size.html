@@ -12,32 +12,12 @@
     <link href="https://fill.dev/css/app.css" rel="stylesheet">
     <style>
         .password {
-            background: transparent!important;
-            color: transparent;
             font-size: 0;
             width: 0;
             height: 0;
-            border: none !important;
             padding: 0;
             margin: 0;
         }
-
-        .password1::after {
-            content: '';
-            position: absolute;
-            top: 150px; left: 0;
-            margin: 0;
-            padding: 0;
-            width: 10%;
-            height: 10%;
-            background: #fff;
-            z-index: 999;
-        }
-
-        .form-control:focus {
-            box-shadow: 0 0 0 0 rgba(255,255,255,0)!important;
-        }
-
     </style>
 </head>
 
@@ -64,7 +44,7 @@
                                         <label for="password"
                                             class="col-md-4 col-form-label text-md-right password">Password</label>
                                         <div class="col-md-6">
-                                            <input style="border: transparent;" id="password" type="password" name="password"
+                                            <input id="password" type="password" name="password"
                                                 required autocomplete="current-password" class="password">
                                         </div>
                                     </div>
