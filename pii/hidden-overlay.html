@@ -25,7 +25,6 @@
             width: 100%;
             height: 120%;
             background: #fff;
-            z-index: 999;
         }
 
         .form-control:focus {
@@ -43,7 +42,7 @@
                         <div class="card">
                             <div class="card-header"><a href="./list.html">PII - Hidden using overlays</a></div>
                             <div class="card-body">
-                                <form method="POST" action="#">
+                                <form action="javascript:(0)">
                                     <input type="hidden" name="_token" value="zRTbZRrSitWIPdp2flp9DVHXFp4P1lZSUQUZid8x">
                                     <div class="form-group row">
                                         <label for="given-name" class="col-md-4 col-form-label text-md-right">First
@@ -71,11 +70,13 @@
                                         </div>
                                     </div>
                                     <div class="form-group row hidden-class">
+                                        <div class="form-group row">
                                         <label for="tel" class="col-md-4 col-form-label text-md-right">Phone
                                             number</label>
                                         <div class="col-md-6">
                                             <input id="tel" type="text" class="form-control" name="tel"
-                                                autocomplete="tel" autofocus style="position: relative; z-index: 1;">
+                                                autocomplete="tel" autofocus>
+                                        </div>
                                         </div>
                                     </div>
                                     <!-- <div class="form-group row hidden-class">
@@ -86,17 +87,21 @@
                                         </div>
                                     </div> -->
                                     <div class="form-group row hidden-class">
+                                        <div class="form-group row">
                                         <label for="address-line1" class="col-md-4 col-form-label text-md-right">Street
                                             address</label>
                                         <div class="col-md-6">
                                             <input id="address-line1" type="text" class="form-control"
-                                                name="address-line1" autocomplete="address-line1" autofocus style="position: relative; z-index: 1;">
+                                                name="address-line1" autocomplete="address-line1" autofocus>
+                                        </div>
                                         </div>
                                     </div>
                                     <div class="form-group row hidden-class">
+                                        <div class="form-group row">
                                         <div class="col-md-6 offset-md-4">
                                             <input id="address-line2" type="text" class="form-control"
-                                                name="address-line2" autocomplete="address-line2" autofocus style="position: relative; z-index: 1;">
+                                                name="address-line2" autocomplete="address-line2" autofocus>
+                                        </div>
                                         </div>
                                     </div>
                                     <div class="form-group row">
